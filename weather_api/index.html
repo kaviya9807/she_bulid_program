@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherSphere</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>☁️ WeatherSphere</h1>
+
+            <p>Current weather, anywhere.</p>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Error message -->
+
+        <p id="error"></p>
+
+
+        <!-- Weather information -->
+
+        <div class="weather-card">
+
+            <h2 id="cityName">
+                Search for a city
+            </h2>
+
+            <h1 id="temperature">
+                --°C
+            </h1>
+
+            <p id="condition">
+                Weather condition
+            </p>
+
+            <p>
+                💧 Humidity:
+                <span id="humidity">--</span>
+            </p>
+
+            <p>
+                💨 Wind:
+                <span id="wind">--</span>
+            </p>
+
+            <p>
+                🌡️ Feels like:
+                <span id="feelsLike">--</span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
